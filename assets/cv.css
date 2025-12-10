@@ -1,0 +1,119 @@
+@import "./palette.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    padding-block: 2rem;
+    /* font-size: 1.6rem; */
+    font-size: 1.3rem;
+}
+
+#cv-container {
+    /* cm */
+    width: 21cm;
+    height: 29.7cm;
+    padding: 0.34in 0.4in;
+    margin: auto;
+    box-shadow: 0 0 1cm rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    /* 72dpi */
+    /* min-width: 595px;
+    min-height: 842px; */
+
+    /* 92dpi */
+    /* width: 794px;
+    height: 1123px; */
+
+    /* 300dpi */
+    /* max-width: 2480px;
+    max-height: 3508px; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background-color: rgba(249, 249, 0, 0.45);
+}
+
+/* download button style with ai */
+
+#download-pdf {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 9999;
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    border: none;
+
+    background: #2563eb; /* bleu */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
+
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+        background-color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    opacity: 0.9;
+}
+
+#download-pdf:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.4);
+    opacity: 1;
+}
+
+#download-pdf:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
+}
+
+@media print {
+    #download-pdf {
+        display: none;
+    }
+}
+
+/* style for language toggle buttons with ai */
+#language-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+}
+.lang-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.lang-btn.active,
+.lang-btn:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
