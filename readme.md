@@ -7,6 +7,7 @@ Single‑page CV built with semantic HTML and clean CSS, available in **French a
 ## 📋 Table of Contents
 
 -   [Overview](#overview)
+-   [Demo](#demo)
 -   [Key Features](#key-features)
 -   [Technologies Used](#technologies-used)
 -   [Project Structure](#project-structure)
@@ -21,6 +22,12 @@ Single‑page CV built with semantic HTML and clean CSS, available in **French a
 
 This repository contains a bilingual CV layout (`index.html` in French, `en.html` in English) styled for A4 printing and PDF export.  
 The PDF is generated on the client side using a fixed A4 canvas (`#cv-container`) and a floating download button that calls `html2pdf.js`.
+
+---
+
+## <div id="demo">🚀 Demo</div>
+
+-   Live preview (FR/EN): https://sami-regragui-work.github.io/cv-html-pdf/
 
 ---
 

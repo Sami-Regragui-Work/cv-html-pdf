@@ -339,6 +339,21 @@
 
         <!-- important!!! html2pdf is from local node_modules (dev/clone must run npm install) -->
         <script src="node_modules/html2pdf.js/dist/html2pdf.bundle.min.js"></script>
+
+        <!-- Fallback CDN for GitHub Pages / missing local -->
+        <script>
+            if (typeof window.html2pdf === "undefined") {
+                var s = document.createElement("script");
+                s.src =
+                    "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
+                s.integrity =
+                    "sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==";
+                s.crossOrigin = "anonymous";
+                s.referrerPolicy = "no-referrer";
+                document.head.appendChild(s);
+            }
+        </script>
+
         <script src="assets/pdf.js"></script>
         <script src="assets/lang.js"></script>
     </body>

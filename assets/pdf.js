@@ -5,6 +5,12 @@ const button = document.getElementById("download-pdf");
 const element = document.getElementById("cv-container");
 
 button.addEventListener("click", () => {
+    if (typeof window.html2pdf === "undefined") {
+        // Fallback: open browser print dialog
+        window.print();
+        return;
+    }
+
     button.disabled = true;
     button.textContent = "Generating PDF...";
     button.style.cursor = "wait";
