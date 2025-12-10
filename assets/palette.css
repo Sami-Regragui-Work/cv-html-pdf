@@ -29,7 +29,7 @@ header .left-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 2;
+    /* flex: 2; */
     gap: 0.5rem;
 }
 
@@ -42,8 +42,9 @@ header .left-side .top {
 header .right-side {
     display: flex;
     /* align-items: center; */
-    flex: 1;
+    /* flex: 1; */
     max-width: min-content;
+    justify-content: end;
     overflow: hidden;
 }
 
@@ -51,6 +52,7 @@ header .left-side .bottom > ul {
     list-style: none;
     display: flex;
     /* gap: 1rem; */
+    min-width: max-content;
 }
 
 header .left-side .bottom .contacts:nth-child(n + 2)::before {
