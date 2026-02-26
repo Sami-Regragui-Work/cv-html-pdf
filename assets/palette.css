@@ -1,27 +1,32 @@
 :root {
     --primary-clr: rgb(63, 1, 153);
-    --secondary-clr: rgb(102, 102, 102);
+    --secondary-clr: rgb(56, 56, 56);
     --text-clr: black;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 9rem;
-    /* width: 100%; */
+    gap: 1rem;
 }
 
 header .img-wrapper {
     height: 100%;
+    width: 9rem;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 header img {
-    height: 140%;
-    /* aspect-ratio: 1 / 1; */
-    /* width: auto; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
 }
 
@@ -29,34 +34,31 @@ header .left-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* flex: 2; */
+    flex: 1;
+    min-width: 0;
     gap: 0.5rem;
 }
 
 header .left-side .top {
     display: flex;
     flex-direction: column;
-    /* gap: 0.5rem; */
 }
 
 header .right-side {
     display: flex;
-    /* align-items: center; */
-    /* flex: 1; */
-    max-width: min-content;
-    justify-content: end;
-    overflow: hidden;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 header .left-side .bottom > ul {
     list-style: none;
     display: flex;
-    /* gap: 1rem; */
-    min-width: max-content;
+    flex-wrap: wrap;
 }
 
 header .left-side .bottom .contacts:nth-child(n + 2)::before {
-    content: "•";
+    content: " ";
     margin-inline: 0.5rem;
     color: var(--primary-clr);
 }
@@ -88,7 +90,6 @@ h3 {
 main section h2::after {
     content: "";
     display: block;
-    /* box-shadow: inset 0 0 0 0.1em var(--primary-clr); */
     background-color: var(--primary-clr);
     height: 0.1em;
     width: 100%;
@@ -104,7 +105,6 @@ main .section__content,
 main .section__content ul {
     display: flex;
     flex-direction: column;
-    /* gap: 0.5rem; */
     padding-block: 0.25rem;
     padding-left: 0.25rem;
 }
@@ -130,7 +130,6 @@ main #soft-skills .skills,
 main #langs .languages {
     display: flex;
     flex-direction: row;
-    /* gap: 1rem; */
     text-transform: capitalize;
 }
 
@@ -140,13 +139,6 @@ main #langs .lang:nth-child(n + 2)::before {
     margin-inline: 1rem;
     color: var(--primary-clr);
 }
-
-/* main #soft-skills .skill {
-    background-color: var(--secondary-clr);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    color: white;
-} */
 
 main article:nth-child(n + 2)::before {
     content: "";
