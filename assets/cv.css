@@ -100,6 +100,31 @@ a:hover {
     right: 1.5rem;
     z-index: 9999;
 }
+#cv-type-toggle {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 9999;
+}
+.cv-type-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.cv-type-btn.active,
+.cv-type-btn:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
 .lang-btn {
     background-color: #f3f4f6;
     border: 1px solid #d1d5db;
