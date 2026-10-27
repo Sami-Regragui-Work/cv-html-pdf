@@ -54,14 +54,6 @@
                     class="left-side"
                 >
                     <div class="top">
-                        <div class="top__top">
-                            <h1
-                                id="spec"
-                                class="section__title"
-                            >
-                                Laravel Full-Stack Developer
-                            </h1>
-                        </div>
                         <div class="top__center">
                             <h2
                                 id="name"
@@ -70,8 +62,16 @@
                                 Sami Regragui
                             </h2>
                         </div>
+                        <div class="top__top">
+                            <h1
+                                id="spec"
+                                class="section__title"
+                            >
+                                Full-Stack Laravel Developer
+                            </h1>
+                        </div>
                     </div>
-                    <div class="bottom degree-meta text--secondary text--secondary">
+                    <div class="bottom degree-meta text--secondary">
                         <ul>
                             <li class="contacts">
                                 <a
@@ -115,49 +115,37 @@
                     <div class="img-wrapper">
                         <img
                             id="pfp"
-                            src="assets/circle.png"
+                            src="assets/rectangle.png"
                             alt="Sami Regragui pfp"
                         />
                     </div>
                 </section>
             </header>
             <main>
-                <section id="tech-skills">
-                    <h2 class="section__title">Technical Skills</h2>
-                    <div class="section__content">
-                        <ul class="skills text--secondary">
-                            <li><label class="text--bold">Frontend: </label>HTML, CSS, JavaScript, jQuery, AJAX, Vue.js, Tailwind CSS, Figma</li>
-                            <li><label class="text--bold">Backend: </label>PHP, OOP, Laravel, PDO, Eloquent ORM, JWT</li>
-                            <li><label class="text--bold">Programming Technologies: </label>Java, Python, C, MVC</li>
-                            <li><label class="text--bold">Networks and System Tools: </label>Linux, Postman, Git, VirtualBox</li>
-                            <li><label class="text--bold">Design and Project Management: </label>UML, ERD, StarUML, Jira</li>
-                        </ul>
-                    </div>
-                </section>
                 <section id="education">
                     <h2 class="section__title">Education</h2>
                     <div class="section__content">
                         <article class="degree">
                             <h3 class="degree-name text--bold">Professional Training in Web Development &amp; Programming</h3>
                             <div class="bottom degree-meta text--secondary">
-                                <p class="degree-source">YouCode - UM6P &amp; Groupe OCP • Youssoufia Campus, Morocco</p>
-                                <p class="degree-dates">09/2025 - &nbsp; Present</p>
+                                <p class="degree-source">YouCode - UM6P • Youssoufia Campus, Morocco</p>
+                                <p class="degree-dates">2025 - Present</p>
                             </div>
                         </article>
 
                         <article class="degree">
                             <h3 class="degree-name text--bold">Bachelor of Science - Computer Science, Networks and Multimedia (IRM)</h3>
                             <div class="bottom degree-meta text--secondary">
-                                <p class="degree-source">Faculty of Science and Technology • Mohammadia, Morocco</p>
-                                <p class="degree-dates">09/2023 - 07/2024</p>
+                                <p class="degree-source">Faculty of Science and Technology • Mohammedia, Morocco</p>
+                                <p class="degree-dates">2023-2024</p>
                             </div>
                         </article>
 
                         <article class="degree">
                             <h3 class="degree-name text--bold">DEUST - Mathematics, Computer Science, Physics (MIP)</h3>
                             <div class="bottom degree-meta text--secondary">
-                                <p class="degree-source">Faculty of Science and Technology • Mohammadia, Morocco</p>
-                                <p class="degree-dates">09/2020 - 07/2023</p>
+                                <p class="degree-source">Faculty of Science and Technology • Mohammedia, Morocco</p>
+                                <p class="degree-dates">2020-2023</p>
                             </div>
                         </article>
 
@@ -165,99 +153,99 @@
                             <h3 class="degree-name text--bold">Baccalauréat in Physical Sciences</h3>
                             <div class="bottom degree-meta text--secondary">
                                 <p class="degree-source">Lfqih Lamrini High School • Salé, Morocco</p>
-                                <p class="degree-dates">09/2019 - 07/2020</p>
+                                <p class="degree-dates">2019-2020</p>
                             </div>
                         </article>
                     </div>
                 </section>
+
+                <section id="tech-skills">
+                    <h2 class="section__title">Technical Skills</h2>
+                    <div class="section__content">
+                        <ul class="skills text--secondary">
+                            <li><label class="text--bold">Programming Languages: </label>PHP, JavaScript, Rust, C (data structures), Python, Java SE, SQL, Bash</li>
+                            <li><label class="text--bold">Frontend: </label>HTML, CSS, jQuery, AJAX, Vue.js, Angular, Tailwind CSS</li>
+                            <li><label class="text--bold">Backend: </label>Laravel, Blade, Spring, Spring Boot, Spring MVC, Spring Data JPA, Hibernate, JEE (Jakarta EE), JSP, JSTL, EL, JPA, JPQL, JDBC, PDO, MySQLi, MySQL, PostgreSQL, WebSocket</li>
+                            <li><label class="text--bold">Networks and System Tools: </label>Linux, Docker, Git &amp; GitHub, Maven, Postman, phpMyAdmin, WordPress, IntelliJ IDEA, VS Code, Mininet, SDN OpenDaylight</li>
+                            <li><label class="text--bold">Concepts, Design and Project Management: </label>MVC, OOP, SOLID, UML, ERD, Swagger, Figma, Jira, JUnit 5, Mockito, MockMvc, Testcontainers</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="projects">
+                    <h2 class="section__title">Completed Projects</h2>
+                    <div class="section__content text--secondary">
+                        <article class="project">
+                            <div class="project__header">
+                                <h3 class="project__title">
+                                    <a href="https://github.com/Sami-Regragui-Work/ConvergeThread">ConvergeThread</a>
+                                </h3>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> Laravel, Reverb, LiveKit, CodeMirror 6, Vite, Git</p>
+                            </div>
+                            <p class="project__details">Thread-based, tenant-oriented chat platform with customizable roles, permissions and flexible group interactions. Bulk and individual operations such as mentions, invitations and muting, with real-time updates through Laravel Reverb. Each tenant workspace stays isolated, with groups, duos and temporary merge sessions for cross-team conversations. Messages support Markdown, attachments and per-channel muting.</p>
+                        </article>
+
+                        <article class="project">
+                            <div class="project__header">
+                                <h3 class="project__title">
+                                    <a href="https://github.com/Sami-Regragui-Work/sagc_api">Auth API</a>
+                                </h3>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> Laravel, JWT, Socialite, Swagger, Git</p>
+                            </div>
+                            <p class="project__details">REST authentication service with JWT sessions, Google OAuth sign-in, token refresh and user CRUD, documented with interactive Swagger/OpenAPI so every endpoint can be tested directly from the browser. The stateless design keeps each request self-contained, and an avatar proxy endpoint serves profile images for signed-in users, while refresh tokens keep sessions alive without repeated logins.</p>
+                        </article>
+
+                        <article class="project">
+                            <div class="project__header">
+                                <h3 class="project__title">
+                                    <a href="https://github.com/Sami-Regragui-Work/WorkSpace-Staff-Manager">Workspace Staff Manager</a>
+                                </h3>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> HTML5, Tailwind CSS, JavaScript, localStorage</p>
+                            </div>
+                            <p class="project__details">Room-based staff dispatching tool with six zones, each governed by role-based rules and capacity limits. Interactive CRUD on users and their zone assignments, with unassigned staff and unfilled mandatory zones highlighted. Zones enforce who may enter, such as reception accepting only receptionists and the archives excluding cleaning staff, and data persists in localStorage with a responsive, collapsible sidebar.</p>
+                        </article>
+                    </div>
+                </section>
+
                 <section id="pro-exp">
                     <h2 class="section__title">Professional Experience</h2>
                     <div class="section__content text--secondary">
                         <article class="exp">
-                            <h3 class="exp__title">WordPress Developer (Internship)</h3>
+                            <div class="exp__header">
+                                <h3 class="exp__title">Security R&amp;D Intern — dxcan (Rust Scanner)</h3>
+                                <p class="exp__tools"><label class="text--bold">Tools:</label> Rust, Bash, Python, Nmap, OpenVAS</p>
+                            </div>
+                            <div class="exp__meta">
+                                <p class="exp__company">DXC Technology Morocco &amp; CDG</p>
+                                <p class="exp__location-date">Technopolis, Rabat, Morocco • 05/2026 - 07/2026</p>
+                            </div>
+                            <p class="exp__details">Built a Rust CLI security scanner covering port/OS scanning, CVE matching and TLS/misconfiguration checks, with CSV and Markdown reporting. Benchmarked it against nmap, nuclei and OpenVAS, reaching up to 280x faster CVE analysis than the reference tools. The tool is organized into nine subcommands, so each check can be run independently. Each subcommand can also be run on its own for targeted assessments.</p>
+                        </article>
+
+                        <article class="exp">
+                            <div class="exp__header">
+                                <h3 class="exp__title">WordPress Developer (Internship)</h3>
+                                <p class="exp__tools"><label class="text--bold">Tools:</label> WordPress, PHP, CSS, Js, Git</p>
+                            </div>
                             <div class="exp__meta">
                                 <p class="exp__company">Swiftstream</p>
                                 <p class="exp__location-date">Remote • Quebec, Canada • 12/2024 - 02/2025</p>
                             </div>
-                            <p class="exp__details">Redesign of the NextTalent website under WordPress with theme/plugin customization, responsive CSS/JavaScript integration and agile management.</p>
-                            <p class="exp__tools">
-                                <label class="text--bold">Tools:</label>
-                                WordPress, PHP, CSS, Js, Git
-                            </p>
-                        </article>
-
-                        <article class="exp">
-                            <h3 class="exp__title">SDN Network Developer (Final Year Project)</h3>
-                            <div class="exp__meta">
-                                <p class="exp__company">École Mohammadia d'Ingénieurs</p>
-                                <p class="exp__location-date">Rabat, Morocco • 04/2024 - 06/2024</p>
-                            </div>
-                            <p class="exp__details">Development of an SDN solution with OpenDaylight controller and Mininet for automated traffic management and visualization.</p>
-                            <p class="exp__tools">
-                                <label class="text--bold">Tools:</label>
-                                OpenDaylight, Mininet, Linux, Python, Wireshark
-                            </p>
+                            <p class="exp__details">Redesigned the NextTalent website on WordPress with theme and plugin customization and responsive CSS/JavaScript, so pages adapt cleanly to desktop and mobile screens. Collaborated with a Canadian team in English and French on layout, content and bug fixes.</p>
                         </article>
                     </div>
                 </section>
-                <section id="projects">
-                    <h2 class="section__title">Projects</h2>
-                    <div class="section__content text--secondary">
-                        <article class="project">
-                            <h3 class="project__title">
-                                <a href="https://github.com/Sami-Regragui-Work/ConvergeThread">ConvergeThread - Real-Time Collaboration Platform</a>
-                            </h3>
-                            <div class="project__meta">
-                                <p class="project__company">Personal Project</p>
-                                <p class="project__location-date">2026 • ongoing</p>
-                            </div>
-                            <p class="project__details">Multi-group collaboration tool with real-time WebSocket messaging and an embedded in-app code editor.</p>
-                            <p class="project__tools">
-                                <label class="text--bold">Tools:</label>
-                                Laravel, Reverb, CodeMirror, Git
-                            </p>
-                        </article>
 
-                        <article class="project">
-                            <h3 class="project__title">
-                                <a href="https://github.com/Sami-Regragui-Work/sagc_api">Auth API - REST Authentication Service</a>
-                            </h3>
-                            <div class="project__meta">
-                                <p class="project__company">YouCode</p>
-                                <p class="project__location-date">2026 • 1 week</p>
-                            </div>
-                            <p class="project__details">Decoupled REST API with JWT authentication, OAuth login and interactive Swagger/OpenAPI documentation.</p>
-                            <p class="project__tools">
-                                <label class="text--bold">Tools:</label>
-                                Laravel, JWT, Swagger, Git
-                            </p>
-                        </article>
-
-                        <article class="project">
-                            <h3 class="project__title">
-                                <a href="https://github.com/Sami-Regragui-Work/Unity-Care-Clinic-V1">Unity Care Clinic - Full Stack Clinic Management Dashboard</a>
-                            </h3>
-                            <div class="project__meta">
-                                <p class="project__company">YouCode</p>
-                                <p class="project__location-date">2026 • 1 week</p>
-                            </div>
-                            <p class="project__details">Clinic management system with dynamic CRUD operations, reusable modals and statistics with charts.</p>
-                            <p class="project__tools">
-                                <label class="text--bold">Tools:</label>
-                                PHP, MySQL, Tailwind CSS, jQuery, Chart.js, AJAX
-                            </p>
-                        </article>
-                    </div>
-                </section>
                 <section id="certs">
                     <h2 class="section__title">Certifications</h2>
                     <div class="section__content">
                         <p class="text--secondary">
                             <label class="text--bold">Cisco Certified Network Associate (CCNA)</label>
-                            • Cisco - Version 7
+                            • Cisco - Version 7 • 2023
                         </p>
                     </div>
                 </section>
+
                 <section id="soft-skills">
                     <h2 class="section__title">Soft Skills</h2>
                     <div class="section__content">
@@ -265,17 +253,20 @@
                             <li class="skill">Adaptability</li>
                             <li class="skill">Resilience</li>
                             <li class="skill">Proactive Communication</li>
+                            <li class="skill">Leadership</li>
+                            <li class="skill">Team Spirit</li>
                             <li class="skill">Continuous Learning</li>
                         </ul>
                     </div>
                 </section>
+
                 <section id="langs">
                     <h2 class="section__title">Languages</h2>
                     <div class="section__content">
                         <ul class="languages text--secondary">
                             <li class="lang"><label class="text--bold">Arabic: </label>Native speaker</li>
-                            <li class="lang"><label class="text--bold">English: </label>B2</li>
-                            <li class="lang"><label class="text--bold">French: </label>B1</li>
+                            <li class="lang"><label class="text--bold">English: </label>advanced (B2)</li>
+                            <li class="lang"><label class="text--bold">French: </label>advanced (B1)</li>
                         </ul>
                     </div>
                 </section>

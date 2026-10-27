@@ -54,7 +54,7 @@
                     class="left-side"
                 >
                     <div class="top">
-                        <div class="top__top">
+                        <div class="top__center">
                             <h2
                                 id="name"
                                 class="text--bold"
@@ -62,7 +62,7 @@
                                 Sami Regragui
                             </h2>
                         </div>
-                        <div class="top__center">
+                        <div class="top__top">
                             <h1
                                 id="spec"
                                 class="section__title"
@@ -136,7 +136,7 @@
                         <article class="degree">
                             <h3 class="degree-name text--bold">Bachelor of Science - Computer Science, Networks and Multimedia (IRM)</h3>
                             <div class="bottom degree-meta text--secondary">
-                                <p class="degree-source">Faculty of Science and Technology • Mohammadia, Morocco</p>
+                                <p class="degree-source">Faculty of Science and Technology • Mohammedia, Morocco</p>
                                 <p class="degree-dates">2023-2024</p>
                             </div>
                         </article>
@@ -144,7 +144,7 @@
                         <article class="degree">
                             <h3 class="degree-name text--bold">DEUST - Mathematics, Computer Science, Physics (MIP)</h3>
                             <div class="bottom degree-meta text--secondary">
-                                <p class="degree-source">Faculty of Science and Technology • Mohammadia, Morocco</p>
+                                <p class="degree-source">Faculty of Science and Technology • Mohammedia, Morocco</p>
                                 <p class="degree-dates">2020-2023</p>
                             </div>
                         </article>
@@ -163,11 +163,11 @@
                     <h2 class="section__title">Technical Skills</h2>
                     <div class="section__content">
                         <ul class="skills text--secondary">
-                            <li><label class="text--bold">Frontend: </label>HTML, CSS, JavaScript, Vue.js, Tailwind CSS, Figma</li>
-                            <li><label class="text--bold">Backend: </label>PHP, Java, OOP, PDO, MySQL, Laravel</li>
-                            <li><label class="text--bold">Programming Technologies: </label>Rust, Python, C, MVC</li>
-                            <li><label class="text--bold">Networks and System Tools: </label>Linux, Mininet, SDN ODL, Postman, Git</li>
-                            <li><label class="text--bold">Design and Project Management: </label>UML, ERD, StarUML, Jira</li>
+                            <li><label class="text--bold">Programming Languages: </label>Java SE, PHP, JavaScript, Rust, C (data structures), Python, SQL, Bash</li>
+                            <li><label class="text--bold">Frontend: </label>HTML, CSS, jQuery, AJAX, Vue.js, Angular, Tailwind CSS</li>
+                            <li><label class="text--bold">Backend: </label>Spring, Spring Boot, Spring MVC, Spring Data JPA, Hibernate, JEE (Jakarta EE), JSP, JSTL, EL, JPA, JPQL, JDBC, Laravel, Blade, PDO, MySQLi, MySQL, PostgreSQL, WebSocket</li>
+                            <li><label class="text--bold">Networks and System Tools: </label>Linux, Docker, Git &amp; GitHub, Maven, Postman, phpMyAdmin, WordPress, IntelliJ IDEA, VS Code, Mininet, SDN OpenDaylight</li>
+                            <li><label class="text--bold">Concepts, Design and Project Management: </label>MVC, OOP, SOLID, UML, ERD, Swagger, Figma, Jira, JUnit 5, Mockito, MockMvc, Testcontainers</li>
                         </ul>
                     </div>
                 </section>
@@ -180,9 +180,9 @@
                                 <h3 class="project__title">
                                     <a href="https://github.com/Sami-Regragui-Work/ConvergeThread">ConvergeThread</a>
                                 </h3>
-                                <p class="project__tools"><label class="text--bold">Tools:</label> Laravel, Reverb, CodeMirror, Git</p>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> Laravel, Reverb, LiveKit, CodeMirror 6, Git</p>
                             </div>
-                            <p class="project__details">Multi-group collaborative platform with real-time WebSocket messaging, syntax-highlighted code editor, and shared workspace management enabling instant synchronization of changes across users with live notifications and activity tracking.</p>
+                            <p class="project__details">Thread-based, tenant-oriented chat platform with customizable roles, permissions and flexible group interactions. Bulk and individual operations such as mentions, invitations and muting, with real-time updates through Laravel Reverb. Each tenant workspace stays isolated.</p>
                         </article>
 
                         <article class="project">
@@ -190,19 +190,25 @@
                                 <h3 class="project__title">
                                     <a href="https://github.com/Sami-Regragui-Work/sagc_api">Auth API</a>
                                 </h3>
-                                <p class="project__tools"><label class="text--bold">Tools:</label> Laravel, JWT, Swagger, Git</p>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> Laravel, JWT, Socialite, Swagger, Git</p>
                             </div>
-                            <p class="project__details">Highly scalable decoupled REST authentication service with JWT for secure expirable sessions, multi-provider OAuth integration for streamlined sign-in, refresh token flow for session persistence, and interactive Swagger/OpenAPI documentation with built-in testing capabilities.</p>
+                            <p class="project__details">REST authentication service with JWT sessions, Google OAuth sign-in, token refresh and user CRUD, documented with interactive Swagger/OpenAPI so every endpoint can be tested directly from the browser. Refresh tokens keep sessions active without repeated logins.</p>
                         </article>
 
                         <article class="project">
                             <div class="project__header">
-                                <h3 class="project__title">
-                                    <a href="https://github.com/Sami-Regragui-Work/workspace-staff">Workspace Staff Manager</a>
-                                </h3>
-                                <p class="project__tools"><label class="text--bold">Tools:</label> HTML5, Tailwind CSS, JavaScript</p>
+                                <h3 class="project__title"><a href="https://github.com/Sami-Regragui-Work/User-Management-API">User Management REST API</a></h3>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> Spring MVC, Spring Data JPA, H2, JUnit 5, Mockito</p>
                             </div>
-                            <p class="project__details">Interactive staff management dashboard with hierarchical role-based access control, granular zone restrictions by user profile, dynamic permission visualization and activity logging for secure human resource management and audit trails.</p>
+                            <p class="project__details">Native Spring MVC REST API for admin and current-user CRUD, with Bean Validation, global exception handling and BCrypt hashing. Packaged without Spring Boot and tested with JUnit 5, Mockito and MockMvc. Entities are persisted through Spring Data JPA on H2.</p>
+                        </article>
+
+                        <article class="project">
+                            <div class="project__header">
+                                <h3 class="project__title"><a href="https://github.com/Sami-Regragui-Work/EventPro-API">EventPro API</a></h3>
+                                <p class="project__tools"><label class="text--bold">Tools:</label> Spring Boot, Spring Data JPA, PostgreSQL, Testcontainers</p>
+                            </div>
+                            <p class="project__details">Event ticketing API with pessimistic-lock seat reservation, promo codes and idempotent payments. Unpaid reservations expire automatically through a scheduled job, and a Testcontainers test checks concurrent booking of the last seat. Each ticket is validated once at check-in.</p>
                         </article>
                     </div>
                 </section>
@@ -211,29 +217,27 @@
                     <h2 class="section__title">Professional Experiences</h2>
                     <div class="section__content text--secondary">
                         <article class="exp">
-                            <h3 class="exp__title">Security R&amp;D Intern — dxcan (Rust Security Scanner)</h3>
+                            <div class="exp__header">
+                                <h3 class="exp__title">Security R&amp;D Intern — dxcan (Rust Scanner)</h3>
+                                <p class="exp__tools"><label class="text--bold">Tools:</label> Rust, Bash, Python, Nmap, OpenVAS</p>
+                            </div>
                             <div class="exp__meta">
                                 <p class="exp__company">DXC Technology Morocco &amp; CDG</p>
                                 <p class="exp__location-date">Technopolis, Rabat, Morocco • 05/2026 - 07/2026</p>
                             </div>
-                            <p class="exp__details">Developed a Rust CLI security scanner from scratch (9 subcommands: port/OS scanning, CVE matching, TLS/misconfig checks) and benchmarked against nmap, nuclei and OpenVAS, achieving up to 280x faster CVE scans with full CSV/Markdown reporting.</p>
-                            <p class="exp__tools">
-                                <label class="text--bold">Tools:</label>
-                                Rust, Bash, Python, Nmap, OpenVAS
-                            </p>
+                            <p class="exp__details">Built a Rust CLI security scanner covering port/OS scanning, CVE matching and TLS/misconfiguration checks, with CSV and Markdown reporting. Benchmarked it against nmap, nuclei and OpenVAS, reaching up to 280x faster CVE analysis than the reference tools. The tool is organized into nine subcommands, so each check can be run independently, even on its own for quick targeted security scans.</p>
                         </article>
 
                         <article class="exp">
-                            <h3 class="exp__title">WordPress Developer (Internship)</h3>
+                            <div class="exp__header">
+                                <h3 class="exp__title">WordPress Developer (Internship)</h3>
+                                <p class="exp__tools"><label class="text--bold">Tools:</label> WordPress, PHP, CSS, Js, Git</p>
+                            </div>
                             <div class="exp__meta">
                                 <p class="exp__company">Swiftstream</p>
                                 <p class="exp__location-date">Remote • Quebec, Canada • 12/2024 - 02/2025</p>
                             </div>
-                            <p class="exp__details">Redesigned NextTalent website on WordPress with theme/plugin customization and responsive CSS/JavaScript, collaborating with Canadian team in English and French.</p>
-                            <p class="exp__tools">
-                                <label class="text--bold">Tools:</label>
-                                WordPress, PHP, CSS, Js, Git
-                            </p>
+                            <p class="exp__details">Redesigned the NextTalent website on WordPress with theme and plugin customization and responsive CSS/JavaScript, so pages adapt cleanly to desktop and mobile screens. Collaborated with a Canadian team in English and French on layout, content and bug fixes.</p>
                         </article>
                     </div>
                 </section>
