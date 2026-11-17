@@ -220,3 +220,14 @@ main article:nth-child(n + 2) {
 main #tech-skills .skills {
     gap: 0.5rem;
 }
+
+/* Contacts on two balanced rows: row 1 = email + phone, row 2 = github + linkedin + portfolio */
+header .left-side .bottom .contacts--break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+header .left-side .bottom .contacts--break::before,
+header .left-side .bottom .contacts--break + .contacts::before {
+    content: none;
+}
